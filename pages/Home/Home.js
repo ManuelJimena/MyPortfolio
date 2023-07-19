@@ -4,10 +4,16 @@ export const Home = () => {
 const main = document.querySelector("main");
 cleanPage(main);
 main.innerHTML = `
-<section class="home">
-<p>Hey, I'm</p>
+<section class="home" id="home">
+<div class="home-content">
+<h3>Hello, I am</h3>
 <h1>Manuel Jimena</h1>
 <p>A web development student living in Madrid, Spain. I enjoy creating content and learning.
-<a href="mailto:manuel.jimena29@gmail.com">Say hi →</a>
+
+<div class="social-media">
+<a class="github" href="https://github.com/ManuelJimena" target="_blank"><img src="./icons/github.png" alt="GitHub logo"></a>
+<a class="linkedin" href="https://github.com/ManuelJimena" target="_blank"><img src="./icons/linkedin.png" alt="Linkedin logo"></a>
+
+<a class="btn" href="#" target="_blank">Download CV</a>
 </section>`;
 };

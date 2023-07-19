@@ -1,29 +1,60 @@
 nav {
-    height: 10vh;
     display: flex;
-    justify-content: space-between;
+    position: fixed;
+    width: 100%;
     align-items: center;
-    padding: 0 8rem;
-    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    padding: 2rem 7%;
+    background: yellowgreen;
     }
-    @media (max-width: 770px) {
-    nav {
-    padding: 0 2rem;
+    nav ul {
+        display: flex;
     }
+
+    .navbar a {
+        position: relative;
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-right: 3.5rem;
+color: var(--bg-color);
     }
-    nav > ul {
-    display: flex;
-    gap: 3rem;
+
+    .navbar a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: .2rem;
+        color: var(--bg-color);
     }
+
+    h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-right: auto;
+    cursor: default;
+    color: var(--main-color);
+    }
+
     nav button {
-    background: none;
-    border: none;
-    color: inherit;
-    transform: scale(1.5);
-    }
-    nav a {
-    transition: all 0.3s ease-in-out;
-    }
-    nav a:hover {
-    color: var(--highlight);
-    }
+        background: none;
+        border: none;
+        color: inherit;
+        transform: scale(1.5);
+        }
+        nav a {
+        transition: all 0.3s ease-in-out;
+        }
+        nav a:hover {
+        color: var(--highlight);
+        }
+
+        #darkMode-icon {
+            font-size: 2.4rem;
+            cursor: pointer;
+            color: var(--bg-color);
+        }
+
+   

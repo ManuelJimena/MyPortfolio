@@ -15,8 +15,8 @@ themeBtn.innerText = "☀";
 }
 };
 export const Navbar = () => `
-<nav>
-<h2>Manuel Jimena</h2>
+<nav class="navbar">
+<h2>Portfolio</h2>
 <ul>
 <li>
 <a href="#" id="homelink">Home</a>
@@ -28,7 +28,10 @@ export const Navbar = () => `
 <a href="#" id="projectslink">Projects</a>
 </li>
 <li>
-<button id="themeBtn">☀</button>
+<a href="#" id="contactlink">Contact</a>
+</li>
+<li>
+<div id="darkMode-icon"><img src="./icons/bx-moon.png" alt="Moon icon"></div>
 </li>
 </ul>
 </nav>

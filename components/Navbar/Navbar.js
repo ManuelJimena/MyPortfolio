@@ -1,21 +1,7 @@
 import "./Navbar.css";
-export const changeTheme = () => {
-const themeBtn = document.querySelector("#themeBtn");
-themeBtn.addEventListener("click", () => {
-document.body.classList.toggle("light");
-changeText();
-});
-};
-export const changeText = () => {
-const themeBtn = document.querySelector("#themeBtn");
-if (themeBtn.innerText === "☀") {
-    themeBtn.innerText = "☾";
-} else {
-themeBtn.innerText = "☀";
-}
-};
+
 export const Navbar = () => `
-<nav class="navbar">
+<nav class="navbar" id="header">
 <h2>Portfolio</h2>
 <ul>
 <li>

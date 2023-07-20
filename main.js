@@ -1,6 +1,5 @@
 import "./style.css";
 
-import { changeTheme } from "./components/Navbar/Navbar";
 import { linkPage } from "./utils/linkPage";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Home } from "./pages/Home/Home";
@@ -15,5 +14,3 @@ linkPage("#aboutlink", About);
 linkPage("#projectslink", Projects);
 linkPage("#contactlink", Contact);
 Home();
-changeTheme();
-footer.insertAdjacentHTML("beforebegin", Divider());

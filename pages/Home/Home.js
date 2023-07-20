@@ -54,7 +54,7 @@ main.innerHTML = `
         </div>
 
         <div class="home-img">
-            <img src="images/home.png" alt="">
+            <img src="/images/home.png" alt="Profile picture">
         </div>
     </section>`;
 };

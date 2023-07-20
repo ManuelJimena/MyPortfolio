@@ -6,12 +6,12 @@ cleanPage(main);
 main.innerHTML = `
 <section class="about" id="about">
         <div class="about-img">
-            <img src="images/about.png" alt="">
+            <img src="images/about.png" alt="Profile picture">
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Hi, I'm Here To Help Your Next Project!</h3>
+            <h3>Hi :)!</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti aut at, cupiditate, fugit
                 similique illum vitae eaque voluptates consequatur ipsam doloribus eum dolor. Enim autem tempora odio
                 incidunt! Ipsam hic molestias ad voluptas doloribus ratione animi alias dicta quo.</p>

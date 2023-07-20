@@ -12,8 +12,8 @@ main.innerHTML = `
 
 <div class="social-media">
 <a class="github" href="https://github.com/ManuelJimena" target="_blank"><img src="./icons/github.png" alt="GitHub logo"></a>
-<a class="linkedin" href="https://github.com/ManuelJimena" target="_blank"><img src="./icons/linkedin.png" alt="Linkedin logo"></a>
+<a class="linkedin" href="https://github.com/ManuelJimena" target="_blank"><img src="./icons/linkedin.png" alt="Linkedin logo"></a></div>
 
-<a class="btn" href="#" target="_blank">Download CV</a>
+<a class="btn" href="#" target="_blank">Download CV</a></div>
 </section>`;
 };

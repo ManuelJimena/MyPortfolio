@@ -19,7 +19,7 @@ export const Navbar = () => `
 <h2>Portfolio</h2>
 <ul>
 <li>
-<a href="#" id="homelink">Home</a>
+<a href="#" class="active" id="homelink">Home</a>
 </li>
 <li>
 <a href="#" id="aboutlink">About</a>

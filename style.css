@@ -4,6 +4,7 @@
 --bg-color: #fdfdfd;
 --text-color: #333;
 --main-color: #754ef9;
+--white-color: #fdfdfd;
 --highlight: #6cace4;
 --shadow-color: rgb(0, 0, .2);
 }
@@ -33,7 +34,7 @@ font-size: 62.5%
 
 body {
 background-color: var(--bg-color);
-color: var(--primary-dark);
+color: var(--text-color);
 transition: all 0.5s ease-in-out;
 }
 

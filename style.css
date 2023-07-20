@@ -1,22 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
---bg-color: #fdfdfd;
---text-color: #333;
---main-color: #754ef9;
---white-color: #fdfdfd;
---highlight: #6cace4;
---shadow-color: rgb(0, 0, .2);
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #754ef9;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
 }
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-outline: none;
-scroll-behavior: smooth;
-font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+li {
+    list-style-type: none;
+    }
 
 *::selection {
     background: var(--main-color);
@@ -30,31 +45,4 @@ font-family: "Poppins", sans-serif;
 }
 
 
-li {
-list-style-type: none;
-}
 
-a {
-text-decoration: none;
-color: inherit;
-}
-
-html {
-overflow-x: hidden;
-font-size: 62.5%
-}
-
-body {
-background-color: var(--bg-color);
-color: var(--text-color);
-transition: all 0.5s ease-in-out;
-}
-
-main {
-min-height: 80vh;
-}
-
-a,
-p {
-font-size: 1.1rem;
-}

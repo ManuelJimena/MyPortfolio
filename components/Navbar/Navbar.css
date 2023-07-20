@@ -1,13 +1,15 @@
 nav {
-    display: flex;
     position: fixed;
-    width: 100%;
-    align-items: center;
     top: 0;
     left: 0;
+    width: 100%;
     padding: 2rem 7%;
     background: transparent;
-    }
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: .5s;
+}
     nav ul {
         display: flex;
     }

@@ -31,7 +31,7 @@ export const Navbar = () => `
 <a href="#" id="contactlink">Contact</a>
 </li>
 <li>
-<div id="darkMode-icon"><img src="./icons/bx-moon.png" alt="Moon icon"></div>
+<div class="bx bx-moon" id="darkMode-icon"></div>
 </li>
 </ul>
 </nav>

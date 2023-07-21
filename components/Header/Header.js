@@ -1,8 +1,7 @@
-import "./Navbar.css";
+import "./Header.css";
 
-export const Navbar = () => `
-<header class="header">
-        <a href="#" class="logo">Portfolio.</a>
+export const Header = () => `
+        <a href="#" class="logo">Portfolio</a>
         <nav class="navbar">       
 <ul>
 <li>

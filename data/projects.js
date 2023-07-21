@@ -23,7 +23,7 @@ export const projects = [
     image:
     "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938155/Portfolio/Slack_hpcnat.png",
     tech: ["React", "HTML5", "CSS3", "JavaScript"],
-    github: "https://github.com/ManuelJimena",
+    github: "https://github.com/ManuelJimena/Reto_Coding_Slack",
     link: "www.proyecto1.com",
     },
     {
@@ -32,7 +32,7 @@ export const projects = [
     image:
     "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938156/Portfolio/Dayseeker_hsobcy.png",
     tech: ["React", "HTML5", "CSS3", "JavaScript"],
-    github: "https://github.com/ManuelJimena",
+    github: "https://github.com/ManuelJimena/Reto_Coding_DaySeeker",
     link: "www.proyecto1.com",
     },
     {
@@ -41,7 +41,7 @@ export const projects = [
     image:
     "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938155/Portfolio/AlexKidd_hbnksg.png",
     tech: ["React", "HTML5", "CSS3", "JavaScript"],
-    github: "https://github.com/ManuelJimena",
+    github: "https://github.com/ManuelJimena/RockPaperScissors",
     link: "www.proyecto1.com",
     },
     ];

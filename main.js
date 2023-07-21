@@ -12,4 +12,22 @@ linkPage("#homelink", Home);
 linkPage("#aboutlink", About);
 linkPage("#projectslink", Projects);
 linkPage("#contactlink", Contact);
+ 
+
+/*========== sticky navbar ==========*/
+window.onscroll = () => {
+let header = document.querySelector('.header');
+
+header.classList.toggle('sticky', window.scrollY > 100);
+};
+
 Home();
+
+
+
+
+
+
+
+
+

@@ -1,48 +1,48 @@
 export const projects = [
     {
-    title: "Primer proyecto",
-    description: "Esta es la descripción de mi primer proyecto",
+    title: "El Segurata",
+    description: "Nightclub verifying age is over 18",
     image:
     "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938155/Portfolio/segurata_zctw7j.png",
-    tech: ["React", "HTML5", "CSS3", "JavaScript"],
+    tech: ["HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/ManuelJimena/elSegurata",
-    link: "www.proyecto1.com",
+    link: "https://el-segurata.vercel.app/",
     },
     {
-    title: "Segundo proyecto",
-    description: "Esta es la descripción de mi segundo proyecto",
+    title: "Calculadora de IVA",
+    description: "VAT calculator in Spain and Andorra",
     image:
     "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938155/Portfolio/calculadora_emxne8.png",
-    tech: ["React", "HTML5", "CSS3", "JavaScript"],
+    tech: ["HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/ManuelJimena/calculadoraIVA",
-    link: "www.proyecto1.com",
+    link: "https://calculadora-iva.vercel.app/",
     },
     {
-    title: "Tercer proyecto",
-    description: "Esta es la descripción de mi tercer proyecto",
+    title: "Slack website",
+    description: "Reproduction of the design of the Slack website",
     image:
     "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938155/Portfolio/Slack_hpcnat.png",
-    tech: ["React", "HTML5", "CSS3", "JavaScript"],
+    tech: ["HTML5", "CSS3"],
     github: "https://github.com/ManuelJimena/Reto_Coding_Slack",
-    link: "www.proyecto1.com",
+    link: "https://reto-coding-slack.vercel.app/",
     },
     {
-    title: "Cuarto proyecto",
-    description: "Esta es la descripción de mi cuarto proyecto",
+    title: "Day Seeker website",
+    description: "Reproduction of the design of the Day Seeker website",
     image:
     "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938156/Portfolio/Dayseeker_hsobcy.png",
-    tech: ["React", "HTML5", "CSS3", "JavaScript"],
+    tech: ["HTML5", "CSS3"],
     github: "https://github.com/ManuelJimena/Reto_Coding_DaySeeker",
-    link: "www.proyecto1.com",
+    link: "https://reto-coding-day-seeker.vercel.app/",
     },
     {
-    title: "Quinto proyecto",
-    description: "Esta es la descripción de mi quinto proyecto",
+    title: "Rock, paper, scissors game",
+    description: "Based on Alex Kidd In Miracle World minigame",
     image:
     "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938155/Portfolio/AlexKidd_hbnksg.png",
-    tech: ["React", "HTML5", "CSS3", "JavaScript"],
+    tech: ["Vite", "HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/ManuelJimena/RockPaperScissors",
-    link: "www.proyecto1.com",
+    link: "https://rock-paper-scissors-eta-dun.vercel.app/",
     },
     ];
     

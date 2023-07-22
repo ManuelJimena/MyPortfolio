@@ -270,7 +270,7 @@ li {
 
     #home .profession-container .overlay {
         position: fixed;
-        top: 85rem;
+        top: 86rem;
         left: 50%;
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);

@@ -26,9 +26,8 @@ main.innerHTML = `
               ><i class="bx bxl-linkedin"></i
             ></a>
           </div>
-          <a href="#" class="btn" target="_blank">Download CV</a>
+          <a href="./pdf/ManuelJimenaGarcíaCV.pdf" class="btn" target="_blank">Download CV</a>
         </div>
-
         <div class="profession-container">
           <div class="profession-box">
             <div class="profession" style="--i: 0">

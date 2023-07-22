@@ -32,20 +32,16 @@ main.innerHTML = `
         <div class="profession-container">
           <div class="profession-box">
             <div class="profession" style="--i: 0">
-              <i class="bx bx-code-alt" ></i>
-              <h3>Web Developer</h3>
+              <h3>Backend</h3>
             </div>
             <div class="profession" style="--i:1;">
-              <i class='bx bx-code-curly'></i>
-              <h3>Web Developer</h3>
+            <h3>Developer</h3>
             </div>
               <div class="profession" style="--i:2;">
-              <i class="bx bx-code-alt" ></i>
-              <h3>Web Developer</h3>
+              <h3>Fullstack</h3>
             </div>
                <div class="profession" style="--i:3;">
-               <i class='bx bx-code-curly'></i>
-               <h3>Web Developer</h3>
+               <h3>Frontend</h3>
             </div>
           <div class="circle"></div>
             </div>

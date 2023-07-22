@@ -2,7 +2,9 @@ import "./Header.css";
 
 export const Header = () => `
         <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">       
+        <nav class="navbar">    
+      
+        
 <ul>
 <li>
 <a href="#" class="active" id="homelink">Home</a>
@@ -17,6 +19,7 @@ export const Header = () => `
 <a href="#" id="contactlink">Contact</a>
 </li>
 </ul>
+
 </nav>
 
 <div class="bx bx-moon" id="darkMode-icon"></div>

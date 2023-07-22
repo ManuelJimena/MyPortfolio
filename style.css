@@ -257,9 +257,7 @@ li {
         transform: rotate(90deg) translate(-115px, -450px);
     }
 
-    #home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-240px, -325px);
-    }
+   
 
     #home .profession-box .circle {
         position: fixed;

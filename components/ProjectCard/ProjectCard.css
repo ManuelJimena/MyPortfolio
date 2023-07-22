@@ -24,11 +24,6 @@
     font-size: 3rem;
 }
 
-.portfolio-layer p {
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
-}
-
 .portfolio-layer a {
     display: inline-flex;
     justify-content: center;
@@ -52,5 +47,7 @@
 }
 
 #tech {
-    color: var(--bg-color);
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    color: var(--white-color);
     }

@@ -47,7 +47,19 @@ li {
     --shadow-color: rgba(0, 0, 0, .7);
 }
 
-/* MWDIA QUERY */
+.dark-mode .navbar a {
+    text-shadow: none;
+}
+
+.dark-mode #darkMode-icon {
+    text-shadow: none;
+}
+
+.dark-mode .navbar a::before {
+    box-shadow: none;
+}
+
+/* MEDIA QUERY */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;

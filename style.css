@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+/* PALETTE */
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
@@ -8,6 +9,7 @@
     --shadow-color: rgba(0, 0, 0, .2);
 }
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +21,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* GLOBAL STYLES */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -44,7 +47,7 @@ li {
     --shadow-color: rgba(0, 0, 0, .7);
 }
 
-/* BREAKPOINTS */
+/* MWDIA QUERY */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -96,16 +99,6 @@ li {
 }
 
 @media (max-width: 991px) {
-
-    .navbar a:nth-child(1) {
-        color: var(--main-color);
-    }
-
-    .navbar a.active::before {
-        background: var(--main-color);
-        opacity: .7;
-    }
-
     .home .home-content {
         max-width: 50rem;
     }
@@ -147,6 +140,7 @@ li {
     }
 }
 
+
 @media (max-width: 780px) {
     .navbar a:nth-child(2) {
         color: var(--white-color);
@@ -176,6 +170,7 @@ li {
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         display: none;
+    
     }
 
     .navbar.active {

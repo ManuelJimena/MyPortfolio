@@ -1,6 +1,5 @@
 .portfolio {
     min-height: auto;
-    padding-bottom: 10rem;
 }
 
 .portfolio h2 {
@@ -9,15 +8,14 @@
 
 .portfolio .portfolio-container {
     display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
+    gap: 5rem;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .portfolio-container .portfolio-box {
     position: relative;
-    height: 320px;
+    height: 300px;
     display: flex;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);

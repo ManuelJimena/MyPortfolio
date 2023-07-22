@@ -27,6 +27,10 @@
     position: relative;
     font-size: 1.7rem;
     color: var(--white-color);
+    text-shadow: -1px -1px 0 var(--main-color),
+    1px -1px 0 var(--main-color),
+    -1px 1px 0 var(--main-color),
+    1px 1px 0 var(--main-color);
     font-weight: 500;
     margin-right: 3.5rem;
 }
@@ -42,12 +46,18 @@
     right: 0;
     width: 0;
     height: 2px;
+    bottom: -4px;
     background-color: var(--white-color);
-    transition: width 0.3s ease;
+    box-shadow: -1px -1px 0 var(--main-color),
+    1px -1px 0 var(--main-color),
+    -1px 1px 0 var(--main-color),
+    1px 1px 0 var(--main-color);
+    transition: width 0.3s ease-in-out;
 }
   
 .navbar a:hover::before {
     width: 100%;
+    bottom: -4px;
     right: initial;
     left: 0;
 }
@@ -58,20 +68,26 @@
 
 .header.sticky .navbar a {
     color: var(--text-color);
+    text-shadow: none;
 }
 
 .header.sticky .navbar a.active {
-    color: var(--text-color);
+    color: var(--text-color);  
 }
 
 #darkMode-icon {
     font-size: 2.4rem;
     color: var(--white-color);
+    text-shadow: -1px -1px 0 var(--main-color),
+    1px -1px 0 var(--main-color),
+    -1px 1px 0 var(--main-color),
+    1px 1px 0 var(--main-color);
     cursor: pointer;
 }
 
 .header.sticky #darkMode-icon {
     color: var(--text-color);
+    text-shadow: none;
     opacity: .9;
 }
 

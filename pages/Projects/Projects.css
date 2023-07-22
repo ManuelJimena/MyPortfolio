@@ -8,10 +8,11 @@
 }
 
 .portfolio .portfolio-container {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
+    flex-wrap: wrap;
 }
 
 .portfolio-container .portfolio-box {

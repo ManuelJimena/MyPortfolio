@@ -59,6 +59,10 @@ li {
     box-shadow: none;
 }
 
+.dark-mode header #menu-icon {
+    text-shadow: none;
+}
+
 /* MEDIA QUERY */
 @media (max-width: 1200px) {
     html {
@@ -160,53 +164,32 @@ li {
 }
 
 @media (max-width: 768px) {
-    #menu-icon {
+    header #menu-icon {
         display: block;
     }
 
     #darkMode-icon {
         position: absolute;
-        right: 7rem;
+        right: 12rem;
         font-size: 2.6rem;
         color: var(--text-color);
         margin-bottom: .1rem;
     }
 
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 1rem 0;
+    }
+
+    header .navbar {
         display: none;
-    
     }
 
-    .navbar.active {
+    header .navbar.activo {
         display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        color: var(--text-color);
-    }
-
-    .navbar a:nth-child(1),
-    .navbar a:nth-child(2) {
-        color: var(--text-color);
-    }
-
-    .navbar a.active {
-        color: var(--main-color);
-    }
-
-    .navbar a::before {
-        display: none;
     }
 
     .home {
@@ -314,6 +297,7 @@ li {
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
     }
+
 }
 
 @media (max-width: 450px) {

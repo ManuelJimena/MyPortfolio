@@ -168,6 +168,13 @@ li {
         display: block;
     }
 
+    .heading {
+        display: flex;
+        text-align: center;
+        justify-content: center;;
+        gap: 10px;
+    }
+
     #darkMode-icon {
         position: absolute;
         right: 12rem;

@@ -230,7 +230,7 @@ li {
 
     #home .profession-container .profession-box {
         position: fixed;
-        top: 400px;
+        top: 420px;
         left: 0;
         width: 100%;
     }
@@ -258,7 +258,7 @@ li {
     }
 
     #home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-238px, -325px);
+        transform: rotate(180deg) translate(-240px, -325px);
     }
 
     #home .profession-box .circle {
@@ -333,12 +333,12 @@ li {
         transform: rotate(90deg) translate(-105px, -440px);
     }
 
-    #home.profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-210px, -325px);
+    #home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-218px, -325px);
     }
 
     #home .profession-container .overlay {
-        top: 80rem;
+        top: 82rem;
     }
 
     .contact form .input-box input {

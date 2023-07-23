@@ -7,7 +7,10 @@ main.innerHTML = `
 <section class="home" id="home">
         <div class="home-content">
           <h3>Hello, I am</h3>
-          <h1>Manuel Jimena</h1>
+          <div id="text-animate">
+                <h1>Manuel Jimena</h1>
+                <span class="animate" style="--i:3;"></span>
+            </div>
           <p>
             A web development student living in Madrid, Spain. I enjoy creating
             content and learning.

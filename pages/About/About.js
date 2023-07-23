@@ -6,7 +6,7 @@ cleanPage(main);
 main.innerHTML = `
 <section class="about" id="about">
         <div class="about-img">
-            <img src="images/about.png" alt="Profile picture">
+            <img src="https://res.cloudinary.com/dhjmt9vvq/image/upload/v1690112543/Portfolio/about_ls0yhi.png" alt="Profile picture">
         </div>
 
         <div class="about-content">

@@ -8,7 +8,9 @@ main.innerHTML = `
         <div class="home-content">
           <h3>Hello, I am</h3>
           <div id="text-animate">
-                <h1>Manuel Jimena</h1>
+          <h1>
+          Manuel <span class="animate" style="--i:3;">Jimena</span>
+        </h1>
                 <span class="animate" style="--i:3;"></span>
             </div>
           <p>
@@ -52,7 +54,7 @@ main.innerHTML = `
         </div>
 
         <div class="home-img">
-            <img src="https://res.cloudinary.com/dhjmt9vvq/image/upload/v1690112543/Portfolio/about_ls0yhi.png" alt="Profile picture">
+            <img src="./images/home.png" alt="Profile picture">
         </div>
     </section>`;
 };

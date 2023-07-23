@@ -199,13 +199,17 @@ section {
   #text-animate h1 {
     font-size: 3.2rem;
     font-weight: 700;
+  }
+  
+  #text-animate .animate {
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
+    background-clip: text;
     background-size: 0% 100%;
-    animation: homeBgText 3s linear forwards, homeCursorText 6s linear infinite;
+    animation: homeBgText 3s linear forwards, homeCursorText 16s linear infinite;
     animation-delay: 2s;
   }
   
@@ -219,10 +223,10 @@ section {
   }
   
   @keyframes homeCursorText {
-    0%, 100% {
+    0%, 20%, 100% {
       background-position: -33rem 0;
     }
-    50% {
+    25%, 95% {
       background-position: 0 0;
     }
   }

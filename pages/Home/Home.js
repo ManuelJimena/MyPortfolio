@@ -21,13 +21,13 @@ main.innerHTML = `
               class="github"
               href="https://github.com/ManuelJimena"
               target="_blank"
-              ><i class="bx bxl-github"></i
+              ><i class="bx bxl-github" alt="Github icon"></i
             ></a>
             <a
               class="linkedin"
               href="https://github.com/ManuelJimena"
               target="_blank"
-              ><i class="bx bxl-linkedin"></i
+              ><i class="bx bxl-linkedin" alt="Linkedin icon"></i
             ></a>
           </div>
           <a href="./pdf/ManuelJimenaGarcíaCV.pdf" class="btn" target="_blank">Download CV</a>

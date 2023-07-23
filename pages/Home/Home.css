@@ -160,6 +160,7 @@ section {
     border: 3px solid var(--main-color);
     border-radius: 50%;
     z-index: -1;
+   
 }
 
 .home .profession-container .overlay {
@@ -174,10 +175,11 @@ section {
     border-left: 384px solid transparent;
 }
 
+
 .home-img img {
     position: absolute;
-    bottom: 0;
-    right: 40px;
+    bottom: 245px;
+    right: 50px;
     pointer-events: none;
     max-width: 480px;
     max-height: 100vh;

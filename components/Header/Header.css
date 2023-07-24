@@ -105,3 +105,8 @@
     text-shadow: none;
     opacity: .9;
 }
+
+nav#navbar.navbar.activo {
+    background-color: var(--main-color);
+    height: 300px;
+}

@@ -11,5 +11,4 @@ export const Header = () => `
     </ul>
 </nav>
 <div class="bx bx-moon" id="darkMode-icon"></div>
-
 `;

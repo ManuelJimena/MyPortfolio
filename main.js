@@ -32,9 +32,15 @@ darkModeIcon.onclick = () => {
 
 const button = document.querySelector('#menu-icon');
 const nav = document.querySelector('.navbar');
+const menuLinks = document.querySelectorAll('.navbar a');
 
 button.addEventListener('click', () => {
     nav.classList.toggle('activo');
-   /* darkModeIcon.style.display = nav.classList.contains('activo') ? 'none' : 'block'; */
 
+});
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('activo');
+  });
 });

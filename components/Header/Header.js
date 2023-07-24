@@ -17,8 +17,7 @@ export const Header = () => `
       <a href="#" id="contactlink">Contact</a>
    </li>
    </ul>
-/nav>
+</nav>
 <div class="bx bx-moon" id="darkMode-icon"></div>
 <div class="bx bx-menu" id="menu-icon"></div>
-</header>
 `;

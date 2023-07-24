@@ -111,7 +111,3 @@ nav#navbar.navbar.activo {
     background-color: var(--main-color);
     height: 300px;
 }
-
-div#darkMode-icon.bx.bx-moon::before {
-    transition: none;
-}

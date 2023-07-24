@@ -200,7 +200,9 @@ li {
     }
 
     .navbar li {
-        margin: 1rem 0;
+        margin-left: 15%;
+        margin-top: 15%;
+        
     }
 
     header .navbar {
@@ -351,7 +353,7 @@ li {
     }
 
     #home .profession-container .overlay {
-        top: 82rem;
+        top: 84rem;
     }
 
     .contact form .input-box input {

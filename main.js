@@ -28,18 +28,8 @@ darkModeIcon.onclick = () => {
 };
 
 const button = document.querySelector('#menu-icon')
-const nav    = document.querySelector('.navbar')
+const nav = document.querySelector('.navbar')
 
 button.addEventListener('click',()=>{
     nav.classList.toggle('activo')
 })
-
-
-
-
-
-
-
-
-
-

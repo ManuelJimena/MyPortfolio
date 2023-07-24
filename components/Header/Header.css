@@ -6,6 +6,8 @@
     padding: 2rem 7%;
     background: transparent;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
     z-index: 100;
     transition: .5s;
@@ -21,6 +23,19 @@
     color: var(--main-color);
     font-weight: 600;
     margin-right: auto;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--white-color);
+    background-color: var(--white-color);
+    padding-left: 20px;
+    display: none;
+    text-shadow: -1px -1px 0 var(--main-color),
+    1px -1px 0 var(--main-color),
+    -1px 1px 0 var(--main-color),
+    1px 1px 0 var(--main-color);
+    cursor: pointer;
 }
 
 .navbar a {
@@ -89,16 +104,4 @@
     color: var(--text-color);
     text-shadow: none;
     opacity: .9;
-}
-
-#menu-icon {
-    font-size: 3.6rem;
-    color: var(--white-color);
-    padding-left: 20px;
-    display: none;
-    text-shadow: -1px -1px 0 var(--main-color),
-    1px -1px 0 var(--main-color),
-    -1px 1px 0 var(--main-color),
-    1px 1px 0 var(--main-color);
-    cursor: pointer;
 }

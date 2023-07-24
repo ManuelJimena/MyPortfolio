@@ -21,7 +21,11 @@
 }
 
 .portfolio-layer h4 {
-    font-size: 3rem;
+    font-size: 4rem;
+}
+
+.portfolio-layer p {
+    font-size: 2rem;
 }
 
 .portfolio-layer a {
@@ -39,15 +43,16 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+    margin: 2rem;
 }
 
 #portfolio-links a i{
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--main-color);
 }
 
 #tech {
     font-size: 1.6rem;
-    margin: .3rem 0 1rem;
+    margin: 1.5rem 0 1rem;
     color: var(--white-color);
     }

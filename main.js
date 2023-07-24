@@ -25,11 +25,16 @@ let darkModeIcon = document.querySelector('#darkMode-icon');
 darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
+    darkModeIcon.style.display = nav.classList.contains('activo') ? 'none' : 'block';
 };
 
-const button = document.querySelector('#menu-icon')
-const nav = document.querySelector('.navbar')
 
-button.addEventListener('click',()=>{
-    nav.classList.toggle('activo')
-})
+
+const button = document.querySelector('#menu-icon');
+const nav = document.querySelector('.navbar');
+
+button.addEventListener('click', () => {
+    nav.classList.toggle('activo');
+   /* darkModeIcon.style.display = nav.classList.contains('activo') ? 'none' : 'block'; */
+
+});

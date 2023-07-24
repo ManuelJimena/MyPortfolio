@@ -41,6 +41,8 @@ li {
     color: var(--bg-color);
 }
 
+/*DARK MODE*/
+
 .dark-mode {
     --bg-color: #0b061f;
     --text-color: #fdfdfd;
@@ -61,7 +63,17 @@ li {
 
 .dark-mode header #menu-icon {
     text-shadow: none;
+    background-color: var(--shadow-color);
 }
+
+.dark-mode .contact form .input-box input {
+    box-shadow: 0 .1rem .5rem var(--main-color);
+}
+
+.dark-mode .contact form textarea {
+    box-shadow: 0 .1rem .5rem var(--main-color);
+}
+
 
 /* MEDIA QUERY */
 @media (max-width: 1200px) {

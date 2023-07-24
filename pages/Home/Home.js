@@ -11,7 +11,7 @@ main.innerHTML = `
           <h1>
           Manuel <span class="animate" style="--i:3;">Jimena</span>
         </h1>
-                <span class="animate" style="--i:3;"></span>
+                
             </div>
           <p>
           Currently, I am studying web development. I live in Madrid, Spain, and I love learning and creating content.

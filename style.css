@@ -334,6 +334,7 @@ li {
 
     #darkMode-icon {
         right: 12rem;
+        margin-bottom: 1rem;
     }
 
     #home .profession-box .profession:nth-child(1) {

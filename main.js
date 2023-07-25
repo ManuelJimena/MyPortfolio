@@ -20,7 +20,23 @@ darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
     darkModeIcon.style.display = nav.classList.contains('activo') ? 'none' : 'block';
+
+    
 };
+
+if(document.body.classList.toggle('dark-mode')) {
+  localStorage.setItem('dark', 'true');
+} else {
+  localStorage.setItem('dark', 'false');
+}
+
+if(localStorage.getItem('dark') === 'true') {
+  document.body.classList.add('dark');
+  darkModeIcon.classList.add('bx-sun');
+} else {
+  document.body.classList.remove('dark');
+  darkModeIcon.classList.remove('bx-sun');
+}
 
 
 

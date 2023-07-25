@@ -74,6 +74,9 @@ li {
     box-shadow: 0 .1rem .5rem var(--main-color);
 }
 
+.dark-mode .circles p {
+	color: #0B061F
+}
 
 /* MEDIA QUERY */
 @media (max-width: 1200px) {
@@ -325,11 +328,27 @@ li {
         grid-template-columns: 1fr;
     }
 
+    #not-found .circles p {
+        font-size: 200px;
+    }
+
+    #not-found .circles p small{
+        font-size: 40px;
+    }
+
 }
 
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    #not-found .circles p {
+        font-size: 150px;
+    }
+
+    #not-found .circles p small{
+        font-size: 35px;
     }
 
     #darkMode-icon {

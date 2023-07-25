@@ -105,16 +105,16 @@
 }
 
 @-webkit-keyframes bigmove {
-	0% { top: 0px; right: 4%; opacity: 0.5; }
+	0% { top: 0px; right: 16%; opacity: 0.5; }
 	25% { top: 100px; right: 40%; opacity:0.4; }
 	50% { top: 35px; right: 45%; opacity:0.8; }
 	75% { top: 100px; right: 35%;  opacity:0.6; }
-	100% { top: 0px; right: 4%; opacity: 0.5; }
+	100% { top: 0px; right: 16%; opacity: 0.5; }
 }
 @keyframes bigmove {
-	0% { top: 0px; right: 4%; opacity: 0.5; }
+	0% { top: 0px; right: 16%; opacity: 0.5; }
 	25% { top: 100px; right: 40%; opacity:0.4; }
 	50% { top: 35px; right: 45%; opacity:0.8; }
 	75% { top: 100px; right: 35%;  opacity:0.6; }
-	100% { top: 0px; right: 4%; opacity: 0.5; }
+	100% { top: 0px; right: 16%; opacity: 0.5; }
 }

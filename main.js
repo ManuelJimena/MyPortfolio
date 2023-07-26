@@ -12,30 +12,37 @@ window.onscroll = () => {
     let header = document.querySelector('.header');
     
     header.classList.toggle('sticky', window.scrollY > 100);
-    };
+  };
 
 let darkModeIcon = document.querySelector('#darkMode-icon');
+const body = document.body;
+
+const enableDarkMode = () => {
+    darkModeIcon.classList.replace('bx-moon', 'bx-sun');
+    body.classList.add('dark-mode');
+    localStorage.setItem('darkMode', 'enabled');
+  };
+
+const disableDarkMode = () => {
+    darkModeIcon.classList.replace('bx-sun', 'bx-moon');
+    body.classList.remove('dark-mode');
+    localStorage.setItem('darkMode', 'disabled');
+  };
+
+const currentMode = localStorage.getItem('darkMode');
+  if (currentMode === 'enabled') {
+    enableDarkMode();
+    } else {
+    disableDarkMode();
+  }
 
 darkModeIcon.onclick = () => {
-    darkModeIcon.classList.toggle('bx-sun');
-    document.body.classList.toggle('dark-mode');
-    darkModeIcon.style.display = nav.classList.contains('activo') ? 'none' : 'block';    
-};
-
-if(document.body.classList.toggle('dark-mode')) {
-  localStorage.setItem('dark', 'true');
-} else {
-  localStorage.setItem('dark', 'false');
-}
-
-if(localStorage.getItem('dark') === 'true') {
-  document.body.classList.add('dark');
-  darkModeIcon.classList.add('bx-sun');
-} else {
-  document.body.classList.remove('dark');
-  darkModeIcon.classList.remove('bx-sun');
-}
-
+  if (body.classList.contains('dark-mode')) {
+    disableDarkMode();
+    } else {
+    enableDarkMode();
+    }
+  };
 
 const button = document.querySelector('#menu-icon');
 const nav = document.querySelector('.navbar');

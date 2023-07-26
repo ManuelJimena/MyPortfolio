@@ -111,3 +111,83 @@ nav#navbar.navbar.activo {
     background-color: var(--main-color);
     height: 300px;
 }
+
+
+ /* MEDIA QUERY */
+ @media (max-width: 1024px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+}
+
+@media (max-width: 896px) {
+    .navbar a:nth-child(2) {
+        color: var(--main-color);
+    }
+}
+
+@media (max-width: 780px) {
+    .navbar a:nth-child(2) {
+        color: var(--white-color);
+    }
+}
+
+@media (max-width: 768px) {
+    header #menu-icon {
+        display: block;
+    }
+
+    .heading {
+        display: flex;
+        text-align: center;
+        justify-content: center;;
+        gap: 10px;
+    }
+
+    #darkMode-icon {
+        position: absolute;
+        right: 12rem;
+        font-size: 2.6rem;
+        color: var(--text-color);
+        margin-bottom: .1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin-left: 15%;
+        margin-top: 15%;
+        
+    }
+
+    header .navbar {
+        width:100%;
+    height:0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all .5s ease;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+    header .navbar.activo {
+    height:50vh;
+    pointer-events: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    #darkMode-icon {
+        right: 12rem;
+        margin-bottom: .7rem;
+    }
+}

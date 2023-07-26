@@ -33,3 +33,26 @@ span {
     margin: 2rem 0 3rem;
 }
 
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 70vw;
+        margin-top: -2rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .about-img img {
+        width: 90vw;
+    }
+}

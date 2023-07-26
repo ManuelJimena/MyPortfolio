@@ -44,3 +44,11 @@
     margin-top: 2rem;
     cursor: pointer;
 }
+
+ /* MEDIA QUERY */
+ 
+ @media (max-width: 450px) {
+    .contact form .input-box input {
+        width: 100%;
+    }
+}

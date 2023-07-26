@@ -22,4 +22,3 @@ main.innerHTML = `
         </div>
     </section>`;
 };
-

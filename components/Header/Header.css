@@ -148,12 +148,9 @@ nav#navbar.navbar.activo {
         gap: 10px;
     }
 
-    #darkMode-icon {
-        position: absolute;
-        right: 12rem;
+    div#darkMode-icon.bx.bx-moon::before {
         font-size: 2.6rem;
-        color: var(--text-color);
-        margin-bottom: .1rem;
+        color: var(--white-color);
     }
 
     .navbar ul {
@@ -186,8 +183,8 @@ nav#navbar.navbar.activo {
 }
 
 @media (max-width: 450px) {
-    #darkMode-icon {
-        right: 12rem;
-        margin-bottom: .7rem;
+    div#darkMode-icon.bx.bx-moon::before {
+        font-size: 2.5rem;
+        margin-bottom: 9rem;
     }
 }

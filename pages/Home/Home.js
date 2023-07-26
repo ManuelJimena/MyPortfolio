@@ -53,7 +53,7 @@ main.innerHTML = `
         </div>
 
         <div class="home-img">
-            <img src="https://res.cloudinary.com/dhjmt9vvq/image/upload/v1690130729/Portfolio/home_netnn7.png" alt="Profile picture">
+            <img id="image-element" src="./images/1.png" alt="Imagen">
         </div>
     </section>`;
 };

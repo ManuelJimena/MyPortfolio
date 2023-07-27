@@ -27,7 +27,7 @@ main.innerHTML = `
             </div>
         </div>
         </div>
-        <div class="Skills-icons">
+        <div class="skills-icons">
         <div class="icons">
         <ul>
         <li><a href="https://es.wikipedia.org/wiki/HTML5" target="_blank"><img src="https://res.cloudinary.com/dhjmt9vvq/image/upload/v1690459750/Portfolio/html5-logo-240_ozkbzy.png" alt="Html5 icon"></a></li>

@@ -75,22 +75,22 @@
     padding: 10px;
 }
 
-.Skills-icons .icons ul li {
+.skills-icons .icons ul li {
     display: inline-block;
     line-height: 10;
 }
 
-.Skills-icons .icons ul li img {
+.skills-icons .icons ul li img {
     width: 50%;
     height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.Skills-icons .icons ul li img:hover {
+.skills-icons .icons ul li img:hover {
     transform: scale(1.2);
 }
 
-.Skills-icons {
+.skills-icons {
     justify-content: center;
     text-align: center;
     padding: 1rem;
@@ -122,8 +122,23 @@
 }
 }
  
- @media (max-width: 450px) {
-    .contact form .input-box input {
-        width: 100%;
+@media (max-width: 880px) {
+    .skills-icons .icons ul li img {
+        width: 35%;
+    }
+    .skills-icons {
+        padding: 0rem;
+      }
+}
+
+@media (max-width: 859px) {
+    .skills-icons .icons ul li img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 577px) {
+    .skills-icons .icons ul li img {
+        display: none;
     }
 }

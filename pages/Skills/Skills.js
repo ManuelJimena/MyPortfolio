@@ -5,7 +5,7 @@ const main = document.querySelector("main");
 cleanPage(main);
 main.innerHTML = `
 <section class="skills" id="skills">
-        <h2 class="heading"><span><</span>Skills<span>/></span></h2>
+        <h2 class="heading"><span>My </span>Skills</h2>
         <div class="serv-content">
             <div class="card">
                 <div class="box"> <i class='bx bx-code-alt'></i>

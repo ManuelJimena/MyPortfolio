@@ -6,6 +6,7 @@ export const Header = () => `
     <ul>
         <li><a href="/" class="active" id="homelink">Home</a></li>
         <li><a href="/about" id="aboutlink">About</a></li>
+        <li><a href="/skills" id="skillslink">Skills</a></li>
         <li><a href="/projects" id="projectslink">Projects</a></li>
         <li><a href="/contact" id="contactlink">Contact</a></li>
     </ul>

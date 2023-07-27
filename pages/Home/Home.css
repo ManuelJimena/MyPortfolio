@@ -178,10 +178,10 @@ section {
 
 .home-img img {
     position: absolute;
-    bottom: 245px;
-    right: 50px;
+    bottom: 300px;
+    right: 40px;
     pointer-events: none;
-    max-width: 480px;
+    max-width: 320px;
     max-height: 100vh;
 }
 
@@ -238,7 +238,9 @@ section {
     }
 
     .home-img img {
-        right: 0;
+        right: 26px;
+        bottom: 320px;
+        max-width: 280px;
     }
 }
 
@@ -247,9 +249,6 @@ section {
         right: -15%;
     }
 
-    #home .home-img img {
-        max-width: 420px;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -261,9 +260,12 @@ section {
         right: -12%;
     }
 
-    #home .home-img img {
-        max-width: 400px;
+    .home-img img {
+        right: 24px;
+        bottom: 348px;
+        max-width: 230px;
     }
+
 }
 
 @media (max-width: 991px) {

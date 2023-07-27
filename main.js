@@ -10,49 +10,42 @@ addLinkListeners();
 
 // Navbar fijo al hacer scroll
 window.onscroll = () => {
-    let header = document.querySelector('.header');
+    const header = document.querySelector('.header');
     header.classList.toggle('sticky', window.scrollY > 100);
 };
 
-// Modo dark
-let darkModeIcon = document.querySelector('#darkMode-icon');
+// Modo oscuro
+const darkModeIcon = document.querySelector('#darkMode-icon');
 const body = document.body;
 
 /* Función para cambiar los iconos/imagen y guardar en el localstorage */
-const changeImage = (imageName) => {
-    const imageElement = document.querySelector('#image-element');
-    if (imageElement) {
-        imageElement.src = imageName;
+
+const toggleDarkMode = () => {
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        darkModeIcon.classList.replace('bx-sun', 'bx-moon');
+        localStorage.setItem('darkMode', 'disabled');
+    } else {
+        body.classList.add('dark-mode');
+        darkModeIcon.classList.replace('bx-moon', 'bx-sun');
+        localStorage.setItem('darkMode', 'enabled');
     }
 };
 
-const enableDarkMode = () => {
-    darkModeIcon.classList.replace('bx-moon', 'bx-sun');
-    body.classList.add('dark-mode');
-    localStorage.setItem('darkMode', 'enabled');
-    changeImage('./images/2.png');
-};
-
-const disableDarkMode = () => {
-    darkModeIcon.classList.replace('bx-sun', 'bx-moon');
-    body.classList.remove('dark-mode');
-    localStorage.setItem('darkMode', 'disabled');
-    changeImage('./images/1.png');
-};
-
+// Lógica para cargar el modo y la imagen al cargar la página
 const currentMode = localStorage.getItem('darkMode');
+
 if (currentMode === 'enabled') {
-    enableDarkMode();
+    body.classList.add('dark-mode');
+    darkModeIcon.classList.replace('bx-moon', 'bx-sun');
 } else {
-    disableDarkMode();
+    body.classList.remove('dark-mode');
+    darkModeIcon.classList.replace('bx-sun', 'bx-moon');
 }
 
+// Lógica para cambiar el modo y la imagen al hacer clic en el icono de modo oscuro
 darkModeIcon.onclick = () => {
-    if (body.classList.contains('dark-mode')) {
-        disableDarkMode();
-    } else {
-        enableDarkMode();
-    }
+    toggleDarkMode();
 };
 
 // Hamburguesa
@@ -69,4 +62,3 @@ menuLinks.forEach(link => {
         nav.classList.remove('activo');
     });
 });
-

@@ -1,6 +1,6 @@
 import "./Header.css";
 export const Header = () => `
-<a href="#" class="logo">Portfolio</a>
+<h2 class="logo">Portfolio</h2>
 <button class="bx bx-menu" id="menu-icon"></button>
 <nav class="navbar" id="navbar">
     <ul>

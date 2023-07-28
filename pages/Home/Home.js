@@ -25,7 +25,7 @@ main.innerHTML = `
             ></a>
             <a
               class="linkedin"
-              href="https://github.com/ManuelJimena"
+              href="https://es.linkedin.com/"
               target="_blank"
               ><i class="bx bxl-linkedin" alt="Linkedin icon"></i
             ></a>

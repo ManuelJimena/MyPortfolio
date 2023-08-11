@@ -45,13 +45,13 @@ export const projects = [
     link: "https://rock-paper-scissors-eta-dun.vercel.app/",
     },
     {
-    title: "Black Bull: The gourmet burgers",
-    description: "Black Bull Burger joint's website",
+    title: "Burguer Bliss: The gourmet burgers",
+    description: "Burguer Bliss joint's website",
     image:
-    "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1691532727/Portfolio/BlackBullWeb_tbjolz.png",
+    "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1691786527/Portfolio/Banner_hmifhs.webp",
     tech: ["Vite", "HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/ManuelJimena/",
-    link: "https://black-bull-bice.vercel.app/",
+    link: "https://burguer-bliss.vercel.app/",
     },
     ];
     

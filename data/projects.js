@@ -1,14 +1,5 @@
 export const projects = [
     {
-    title: "El Segurata",
-    description: "Nightclub verifying age is over 18",
-    image:
-    "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938155/Portfolio/segurata_zctw7j.png",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    github: "https://github.com/ManuelJimena/elSegurata",
-    link: "https://el-segurata.vercel.app/",
-    },
-    {
     title: "Calculadora de IVA",
     description: "VAT calculator in Spain and Andorra",
     image:
@@ -52,6 +43,15 @@ export const projects = [
     tech: ["Vite", "HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/ManuelJimena/",
     link: "https://burguer-bliss.vercel.app/",
+    },
+    {
+    title: "Luxury Fade Studio",
+    description: "Barbershop",
+    image:
+    "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938155/Portfolio/segurata_zctw7j.png",
+    tech: ["Vite", "HTML5", "CSS3", "JavaScript"],
+    github: "https://github.com/ManuelJimena/",
+    link: "https://luxury-fade-studio.vercel.app/",
     },
     ];
     

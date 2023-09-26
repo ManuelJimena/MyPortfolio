@@ -1,12 +1,12 @@
 export const projects = [
     {
-    title: "Calculadora de IVA",
-    description: "VAT calculator in Spain and Andorra",
+    title: "Pokédex",
+    description: "A Pokédex implemented in React leveraging an external API",
     image:
-    "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938155/Portfolio/calculadora_emxne8.png",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    github: "https://github.com/ManuelJimena/calculadoraIVA",
-    link: "https://calculadora-iva.vercel.app/",
+    "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1695759932/Portfolio/Pok%C3%A9dex_pcenhf.png",
+    tech: ["React", "Vite", "CSS3"],
+    github: "https://github.com/ManuelJimena/PokedexAPI",
+    link: "https://pokedex-api-chi.vercel.app/",
     },
     {
     title: "Slack website",
@@ -48,7 +48,7 @@ export const projects = [
     title: "Luxury Fade Studio",
     description: "Barbershop",
     image:
-    "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1689938155/Portfolio/segurata_zctw7j.png",
+    "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1695759445/Portfolio/Peluquer%C3%ADa_yoizyi.webp",
     tech: ["Vite", "HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/ManuelJimena/",
     link: "https://luxury-fade-studio.vercel.app/",

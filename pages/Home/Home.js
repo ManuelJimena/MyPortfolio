@@ -25,7 +25,7 @@ main.innerHTML = `
             ></a>
             <a
               class="linkedin"
-              href="https://es.linkedin.com/"
+              href="https://www.linkedin.com/in/manuel-jimena-garcía/"
               target="_blank"
               ><i class="bx bxl-linkedin" alt="Linkedin icon"></i
             ></a>

@@ -3,7 +3,7 @@ export const projects = [
     title: "Pokédex",
     description: "A Pokédex implemented in React leveraging an external API",
     image:
-    "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1695759932/Portfolio/Pok%C3%A9dex_pcenhf.png",
+    "http://res.cloudinary.com/dhjmt9vvq/image/upload/v1696247672/Portfolio/Pok%C3%A9dex_pcenhf.png",
     tech: ["React", "Vite", "CSS3"],
     github: "https://github.com/ManuelJimena/PokedexAPI",
     link: "https://pokedex-api-chi.vercel.app/",

@@ -49,7 +49,7 @@ export const projects = [
     description: "Barbershop",
     image:
     "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1695759445/Portfolio/Peluquer%C3%ADa_yoizyi.webp",
-    tech: ["Vite", "HTML5", "CSS3", "JavaScript"],
+    tech: ["React", "Vite", "CSS3"],
     github: "https://github.com/ManuelJimena/",
     link: "https://luxury-fade-studio.vercel.app/",
     },

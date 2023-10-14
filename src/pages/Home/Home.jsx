@@ -1,33 +1,36 @@
-import "./Home.css"
+import React from 'react';
+import "./Home.css";
 
 const Home = () => {
 
-    return (
-<main translate="no">
+  const darkModeLocalStorageKey = 'darkMode';
+  const currentMode = localStorage.getItem(darkModeLocalStorageKey);
+  const isDarkMode = currentMode === 'enabled';
 
-<section className="home" id="home">
+  const logoUrl = isDarkMode
+    ? "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697300018/Portfolio/logodeveloper_dark_j3j2cy.webp"
+    : "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697297300/Portfolio/logodeveloper_ppqmat.webp";
+
+  return (
+    <main translate="no">
+      <section className="home" id="home">
         <div className="home-content">
           <h3>Hello, I am</h3>
           <div id="text-animate">
           <h1>
           Manuel <span className="animate" style={{ "--i": 3 }}>Jimena</span>
-        </h1>
-                
-            </div>
+        </h1>     
+          </div>
           <p>
-          Currently, I am studying web development. I live in Madrid, Spain, and I love learning and creating content.
+            Currently, I am studying web development. I live in Madrid, Spain, and I love learning and creating content.
           </p>
           <div className="social-media">
-            <a
-              className="github"
-              href="https://github.com/ManuelJimena"
-              target="_blank"
-              ><i className="bx bxl-github" alt="Github icon"></i></a>
-            <a
-              className="linkedin"
-              href="https://www.linkedin.com/in/manuel-jimena-garcía/"
-              target="_blank"
-              ><i className="bx bxl-linkedin" alt="Linkedin icon"></i></a>
+            <a className="github" href="https://github.com/ManuelJimena" target="_blank">
+              <i className="bx bxl-github" alt="Github icon"></i>
+            </a>
+            <a className="linkedin" href="https://www.linkedin.com/in/manuel-jimena-garcía/" target="_blank">
+              <i className="bx bxl-linkedin" alt="Linkedin icon"></i>
+            </a>
           </div>
           <a href="./src/assets/pdf/ManuelJimenaGarcíaCV.pdf" className="btn" target="_blank">Download CV</a>
         </div>
@@ -37,27 +40,24 @@ const Home = () => {
               <h3>Backend</h3>
             </div>
             <div className="profession" style={{ "--i": 1 }}>
-            <h3>Developer</h3>
+              <h3>Developer</h3>
             </div>
-              <div className="profession" style={{ "--i": 2 }}>
+            <div className="profession" style={{ "--i": 2 }}>
               <h3>Fullstack</h3>
             </div>
-               <div className="profession" style={{ "--i": 3 }}>
-               <h3>Frontend</h3>
+            <div className="profession" style={{ "--i": 3 }}>
+              <h3>Frontend</h3>
             </div>
-          <div className="circle"></div>
-            </div>
-
-            <div className="overlay"></div>
+            <div className="circle"></div>
+          </div>
+          <div className="overlay"></div>
         </div>
-
         <div className="home-img">
-            <img id="image-element" src="https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697297300/Portfolio/logodeveloper_ppqmat.webp" alt="Imagen de Manuel Jimena"></img>
+          <img id="image-element" src={logoUrl} alt="Imagen de Manuel Jimena"></img>
         </div>
-    </section>
-
-</main>
-    );
+      </section>
+    </main>
+  );
 };
 
 export default Home;

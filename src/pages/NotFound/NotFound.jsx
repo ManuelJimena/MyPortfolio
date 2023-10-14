@@ -3,7 +3,7 @@ import "./NotFound.css";
 const NotFound = () => {
 
   return (
-    <main>
+    <main translate="no">
         <section id="not-found">
             <div id="title">404 Error Page Not Found</div>
                 <div className="circles">

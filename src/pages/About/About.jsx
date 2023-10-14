@@ -3,7 +3,7 @@ import "./About.css"
 const About = () => {
 
     return (
-<main>
+<main translate="no">
 
 <section className="about" id="about">
         <div className="about-img">

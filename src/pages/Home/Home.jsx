@@ -3,7 +3,7 @@ import "./Home.css"
 const Home = () => {
 
     return (
-<main>
+<main translate="no">
 
 <section className="home" id="home">
         <div className="home-content">
@@ -52,7 +52,7 @@ const Home = () => {
         </div>
 
         <div className="home-img">
-            <img id="image-element" src="https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697286725/Portfolio/1_b5a1vc.webp" alt="Imagen de Manuel Jimena"></img>
+            <img id="image-element" src="https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697297300/Portfolio/logodeveloper_ppqmat.webp" alt="Imagen de Manuel Jimena"></img>
         </div>
     </section>
 

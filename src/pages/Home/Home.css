@@ -178,11 +178,10 @@ section {
 
 .home-img img {
     position: absolute;
-    bottom: 300px;
+    bottom: 35%;
     right: 40px;
-    pointer-events: none;
-    max-width: 320px;
-    max-height: 100vh;
+    max-width: 350px;
+    max-height: 320px;
 }
 
   
@@ -239,8 +238,8 @@ section {
 
     .home-img img {
         right: 26px;
-        bottom: 320px;
-        max-width: 280px;
+        bottom: 355px;
+        max-width: 250px;
     }
 }
 
@@ -261,9 +260,9 @@ section {
     }
 
     .home-img img {
-        right: 24px;
-        bottom: 348px;
-        max-width: 230px;
+        right: 26px;
+        bottom: 380px;
+        max-width: 200px;
     }
 
 }

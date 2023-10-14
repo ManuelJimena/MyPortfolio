@@ -5,7 +5,7 @@ const Skills = () => {
     return (
     <main translate="no">
         <section className="skills" id="skills">
-            <h2 className="heading"><span>My </span>Skills</h2>
+            <h2 className="heading">My <span>Skills</span></h2>
             <div className="serv-content">
                 <div className="card">
                     <div className="box"> <i className='bx bx-code-alt'></i>

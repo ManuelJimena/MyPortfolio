@@ -79,7 +79,7 @@ const Header = () => {
       <nav className={`navbar ${navbar ? 'activo' : ''}`} id="navbar">
         <ul>
           <li>
-            <NavLink to="" className="active" id="homelink" onClick={handleLinkClick}>
+            <NavLink to="" id="homelink" onClick={handleLinkClick}>
               Home
             </NavLink>
           </li>

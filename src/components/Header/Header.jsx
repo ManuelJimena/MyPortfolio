@@ -1,7 +1,8 @@
-import "./Header.css";
+import './Header.css';
+
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -17,8 +18,10 @@ const Header = () => {
     const darkModeIcon = document.querySelector('#darkMode-icon');
     const body = document.body;
     const imageElement = document.querySelector('#image-element');
-    const darkModeLogoUrl = "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697300018/Portfolio/logodeveloper_dark_j3j2cy.webp";
-    const defaultLogoUrl = "https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697297300/Portfolio/logodeveloper_ppqmat.webp";
+    const darkModeLogoUrl =
+      'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697300018/Portfolio/logodeveloper_dark_j3j2cy.webp';
+    const defaultLogoUrl =
+      'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697297300/Portfolio/logodeveloper_ppqmat.webp';
     const darkModeLocalStorageKey = 'darkMode';
 
     const enableDarkMode = () => {
@@ -51,7 +54,7 @@ const Header = () => {
 
     return () => {
       window.removeEventListener('scroll', () => {});
-    }
+    };
   }, []);
 
   const handleClick = () => {
@@ -70,11 +73,31 @@ const Header = () => {
       <button className="bx bx-menu" id="menu-icon" onClick={handleClick}></button>
       <nav className={`navbar ${navbar ? 'activo' : ''}`} id="navbar">
         <ul>
-          <li><NavLink to="" className="active" id="homelink" onClick={handleLinkClick}>Home</NavLink></li>
-          <li><NavLink to="about" id="aboutlink" onClick={handleLinkClick}>About</NavLink></li>
-          <li><NavLink to="skills" id="skillslink" onClick={handleLinkClick}>Skills</NavLink></li>
-          <li><NavLink to="projects" id="projectslink" onClick={handleLinkClick}>Projects</NavLink></li>
-          <li><NavLink to="contact" id="contactlink" onClick={handleLinkClick}>Contact</NavLink></li>
+          <li>
+            <NavLink to="" className="active" id="homelink" onClick={handleLinkClick}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="about" id="aboutlink" onClick={handleLinkClick}>
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="skills" id="skillslink" onClick={handleLinkClick}>
+              Skills
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="projects" id="projectslink" onClick={handleLinkClick}>
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="contact" id="contactlink" onClick={handleLinkClick}>
+              Contact
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <div className={`bx ${darkMode ? 'bx-sun' : 'bx-moon'}`} id="darkMode-icon"></div>

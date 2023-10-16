@@ -1,6 +1,7 @@
-import "./Projects.css";
-import { useProjects } from "../../hooks/useProjects";
-import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
+import './Projects.css';
+
+import { ProjectCard } from '../../components/ProjectCard/ProjectCard';
+import { useProjects } from '../../hooks/useProjects';
 
 const Projects = () => {
   const projects = useProjects();

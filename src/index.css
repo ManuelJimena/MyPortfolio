@@ -1,77 +1,77 @@
 /* PALETTE */
 :root {
-    --bg-color: #fdfdfd;
-    --text-color: #333;
-    --main-color: #754ef9;
-    --white-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .2);
+  --bg-color: #fdfdfd;
+  --text-color: #333;
+  --main-color: #754ef9;
+  --white-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 /* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* GLOBAL STYLES */
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
-    background: var(--bg-color);
-    color: var(--text-color);
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 li {
-    list-style-type: none;
-    }
+  list-style-type: none;
+}
 
 *::selection {
-    background: var(--main-color);
-    color: var(--bg-color);
+  background: var(--main-color);
+  color: var(--bg-color);
 }
 
 /*DARK MODE*/
 
 .dark-mode {
-    --bg-color: #0b061f;
-    --text-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .7);
+  --bg-color: #0b061f;
+  --text-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, 0.7);
 }
 
 .dark-mode .navbar a {
-    text-shadow: none;
+  text-shadow: none;
 }
 
 .dark-mode #darkMode-icon {
-    text-shadow: none;
+  text-shadow: none;
 }
 
 .dark-mode .navbar a::before {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .dark-mode header #menu-icon {
-    text-shadow: none;
-    background-color: #0B061F;
+  text-shadow: none;
+  background-color: #0b061f;
 }
 
 .dark-mode .contact form .input-box input {
-    box-shadow: 0 .1rem .5rem var(--main-color);
+  box-shadow: 0 0.1rem 0.5rem var(--main-color);
 }
 
 .dark-mode .contact form textarea {
-    box-shadow: 0 .1rem .5rem var(--main-color);
+  box-shadow: 0 0.1rem 0.5rem var(--main-color);
 }
 
 .dark-mode .circles p {
-	color: #0B061F
+  color: #0b061f;
 }

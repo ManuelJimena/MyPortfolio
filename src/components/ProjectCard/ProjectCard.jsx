@@ -1,4 +1,4 @@
-import "./ProjectCard.css";
+import './ProjectCard.css';
 
 export const ProjectCard = ({ project }) => (
   <div className="portfolio-box">
@@ -14,7 +14,7 @@ export const ProjectCard = ({ project }) => (
           <i className="bx bx-link-external"></i>
         </a>
       </div>
-      <p id="tech">{project.tech.join(" - ")}</p>
+      <p id="tech">{project.tech.join(' - ')}</p>
     </div>
   </div>
 );

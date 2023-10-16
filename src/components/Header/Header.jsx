@@ -17,7 +17,6 @@ const Header = () => {
 
     const darkModeIcon = document.querySelector('#darkMode-icon');
     const body = document.body;
-    const imageElement = document.querySelector('#image-element');
     const darkModeLogoUrl =
       'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697300018/Portfolio/logodeveloper_dark_j3j2cy.webp';
     const defaultLogoUrl =
@@ -27,7 +26,10 @@ const Header = () => {
     const enableDarkMode = () => {
       darkModeIcon.classList.replace('bx-moon', 'bx-sun');
       body.classList.add('dark-mode');
-      imageElement.setAttribute('src', darkModeLogoUrl);
+      const imageElement = document.querySelector('#image-element');
+      if (imageElement) {
+        imageElement.setAttribute('src', darkModeLogoUrl);
+      }
       localStorage.setItem(darkModeLocalStorageKey, 'enabled');
       setDarkMode(true);
     };
@@ -35,7 +37,10 @@ const Header = () => {
     const disableDarkMode = () => {
       darkModeIcon.classList.replace('bx-sun', 'bx-moon');
       body.classList.remove('dark-mode');
-      imageElement.setAttribute('src', defaultLogoUrl);
+      const imageElement = document.querySelector('#image-element');
+      if (imageElement) {
+        imageElement.setAttribute('src', defaultLogoUrl);
+      }
       localStorage.setItem(darkModeLocalStorageKey, 'disabled');
       setDarkMode(false);
     };

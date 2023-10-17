@@ -91,7 +91,7 @@
 }
 
 .header.sticky .navbar a.active {
-  color: var(--main-color);
+  font-weight: 800;
 }
 
 .navbar a.active {

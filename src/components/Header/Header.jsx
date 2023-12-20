@@ -1,74 +1,45 @@
 import './Header.css';
-
-import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useEffect, useState, useCallback } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(localStorage.getItem('darkMode') === 'enabled');
 
-  useEffect(() => {
+  const toggleSticky = useCallback(() => {
     const header = document.querySelector('.header');
     header.classList.toggle('sticky', window.scrollY > 100);
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('sticky', window.scrollY > 100);
-    });
-
-    const darkModeIcon = document.querySelector('#darkMode-icon');
-    const body = document.body;
-    const darkModeLogoUrl =
-      'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697300018/Portfolio/logodeveloper_dark_j3j2cy.webp';
-    const defaultLogoUrl =
-      'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697297300/Portfolio/logodeveloper_ppqmat.webp';
-    const darkModeLocalStorageKey = 'darkMode';
-
-    const enableDarkMode = () => {
-      darkModeIcon.classList.replace('bx-moon', 'bx-sun');
-      body.classList.add('dark-mode');
-      const imageElement = document.querySelector('#image-element');
-      if (imageElement) {
-        imageElement.setAttribute('src', darkModeLogoUrl);
-      }
-      localStorage.setItem(darkModeLocalStorageKey, 'enabled');
-      setDarkMode(true);
-    };
-
-    const disableDarkMode = () => {
-      darkModeIcon.classList.replace('bx-sun', 'bx-moon');
-      body.classList.remove('dark-mode');
-      const imageElement = document.querySelector('#image-element');
-      if (imageElement) {
-        imageElement.setAttribute('src', defaultLogoUrl);
-      }
-      localStorage.setItem(darkModeLocalStorageKey, 'disabled');
-      setDarkMode(false);
-    };
-
-    const currentMode = localStorage.getItem(darkModeLocalStorageKey);
-
-    if (currentMode === 'enabled') {
-      enableDarkMode();
-    } else {
-      disableDarkMode();
-    }
-
-    darkModeIcon.onclick = () => {
-      body.classList.contains('dark-mode') ? disableDarkMode() : enableDarkMode();
-    };
-
-    return () => {
-      window.removeEventListener('scroll', () => {});
-    };
   }, []);
 
-  const handleClick = () => {
-    setNavbar(!navbar);
-  };
+  useEffect(() => {
+    window.addEventListener('scroll', toggleSticky);
+    return () => window.removeEventListener('scroll', toggleSticky);
+  }, [toggleSticky]);
 
-  const handleLinkClick = () => {
-    setNavbar(false);
-  };
+  useEffect(() => {
+    document.body.className = darkMode ? 'dark-mode' : '';
+
+    const imageElement = document.querySelector('#image-element');
+    if (imageElement) {
+      imageElement.src = darkMode
+        ? 'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697300018/Portfolio/logodeveloper_dark_j3j2cy.webp'
+        : 'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1697297300/Portfolio/logodeveloper_ppqmat.webp';
+    }
+
+    localStorage.setItem('darkMode', darkMode ? 'enabled' : 'disabled');
+  }, [darkMode]);
+
+  const handleClick = () => setNavbar(prevNavbar => !prevNavbar);
+  const handleLinkClick = () => setNavbar(false);
+  const toggleDarkMode = () => setDarkMode(prevMode => !prevMode);
+
+  const links = [
+    { to: "/", id: "homelink", text: "Home" },
+    { to: "/about", id: "aboutlink", text: "About" },
+    { to: "/skills", id: "skillslink", text: "Skills" },
+    { to: "/projects", id: "projectslink", text: "Projects" },
+    { to: "/contact", id: "contactlink", text: "Contact" },
+  ];
 
   return (
     <header className="header" translate="no">
@@ -78,34 +49,16 @@ const Header = () => {
       <button className="bx bx-menu" id="menu-icon" onClick={handleClick}></button>
       <nav className={`navbar ${navbar ? 'activo' : ''}`} id="navbar">
         <ul>
-          <li>
-            <NavLink to="" id="homelink" onClick={handleLinkClick}>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="about" id="aboutlink" onClick={handleLinkClick}>
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="skills" id="skillslink" onClick={handleLinkClick}>
-              Skills
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="projects" id="projectslink" onClick={handleLinkClick}>
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="contact" id="contactlink" onClick={handleLinkClick}>
-              Contact
-            </NavLink>
-          </li>
+          {links.map(link => (
+            <li key={link.id}>
+              <NavLink to={link.to} id={link.id} onClick={handleLinkClick}>
+                {link.text}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
-      <div className={`bx ${darkMode ? 'bx-sun' : 'bx-moon'}`} id="darkMode-icon"></div>
+      <div className={`bx ${darkMode ? 'bx-sun' : 'bx-moon'}`} id="darkMode-icon" onClick={toggleDarkMode}></div>
     </header>
   );
 };

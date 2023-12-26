@@ -71,9 +71,9 @@ const Header = () => {
         className={`bx ${darkMode ? 'bx-sun' : 'bx-moon'}`}
         id="darkMode-icon"
         onClick={toggleDarkMode}
-        onKeyDown={handleKeyPress} role="button"
-        tabIndex="0">
-      </button>
+        onKeyDown={handleKeyPress}
+        tabIndex="0"
+      ></button>
     </header>
   );
 };

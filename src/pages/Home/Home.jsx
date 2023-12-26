@@ -46,11 +46,7 @@ const Home = () => {
               <i className="bx bxl-linkedin" alt="Linkedin icon"></i>
             </a>
           </div>
-          <a
-            href="./src/assets/pdf/ManuelJimenaGarcíaCV.pdf"
-            className="btn"
-            target="_blank"
-          >
+          <a href="/ManuelJimenaGarcíaCV.pdf" className="btn" target="_blank">
             Download CV
           </a>
         </div>

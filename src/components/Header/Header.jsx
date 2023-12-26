@@ -1,10 +1,13 @@
 import './Header.css';
-import { useEffect, useState, useCallback } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+
+import { useCallback, useEffect, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
-  const [darkMode, setDarkMode] = useState(localStorage.getItem('darkMode') === 'enabled');
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem('darkMode') === 'enabled',
+  );
 
   const toggleSticky = useCallback(() => {
     const header = document.querySelector('.header');
@@ -29,16 +32,22 @@ const Header = () => {
     localStorage.setItem('darkMode', darkMode ? 'enabled' : 'disabled');
   }, [darkMode]);
 
-  const handleClick = () => setNavbar(prevNavbar => !prevNavbar);
+  const handleClick = () => setNavbar((prevNavbar) => !prevNavbar);
   const handleLinkClick = () => setNavbar(false);
-  const toggleDarkMode = () => setDarkMode(prevMode => !prevMode);
+  const toggleDarkMode = () => setDarkMode((prevMode) => !prevMode);
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      toggleDarkMode();
+    }
+  };
 
   const links = [
-    { to: "/", id: "homelink", text: "Home" },
-    { to: "/about", id: "aboutlink", text: "About" },
-    { to: "/skills", id: "skillslink", text: "Skills" },
-    { to: "/projects", id: "projectslink", text: "Projects" },
-    { to: "/contact", id: "contactlink", text: "Contact" },
+    { to: '/', id: 'homelink', text: 'Home' },
+    { to: '/about', id: 'aboutlink', text: 'About' },
+    { to: '/skills', id: 'skillslink', text: 'Skills' },
+    { to: '/projects', id: 'projectslink', text: 'Projects' },
+    { to: '/contact', id: 'contactlink', text: 'Contact' },
   ];
 
   return (
@@ -49,7 +58,7 @@ const Header = () => {
       <button className="bx bx-menu" id="menu-icon" onClick={handleClick}></button>
       <nav className={`navbar ${navbar ? 'activo' : ''}`} id="navbar">
         <ul>
-          {links.map(link => (
+          {links.map((link) => (
             <li key={link.id}>
               <NavLink to={link.to} id={link.id} onClick={handleLinkClick}>
                 {link.text}
@@ -58,7 +67,13 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-      <div className={`bx ${darkMode ? 'bx-sun' : 'bx-moon'}`} id="darkMode-icon" onClick={toggleDarkMode}></div>
+      <button
+        className={`bx ${darkMode ? 'bx-sun' : 'bx-moon'}`}
+        id="darkMode-icon"
+        onClick={toggleDarkMode}
+        onKeyDown={handleKeyPress} role="button"
+        tabIndex="0">
+      </button>
     </header>
   );
 };

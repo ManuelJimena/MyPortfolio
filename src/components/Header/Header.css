@@ -29,8 +29,7 @@
 #menu-icon {
   font-size: 3.6rem;
   color: var(--white-color);
-  background-color: var(--white-color);
-  padding-left: 20px;
+  background: transparent;
   display: none;
   text-shadow:
     -1px -1px 0 var(--main-color),
@@ -81,19 +80,6 @@
   left: 0;
 }
 
-.header.sticky .navbar a::before {
-  background-color: var(--text-color);
-}
-
-.header.sticky .navbar a {
-  color: var(--text-color);
-  text-shadow: none;
-}
-
-.header.sticky .navbar a.active {
-  font-weight: 800;
-}
-
 .navbar a.active {
   font-weight: 800;
 }
@@ -112,12 +98,6 @@
   outline: none;
 }
 
-.header.sticky #darkMode-icon {
-  color: var(--text-color);
-  text-shadow: none;
-  opacity: 0.9;
-}
-
 nav#navbar.navbar.activo {
   background-color: var(--main-color);
   height: 300px;
@@ -126,7 +106,7 @@ nav#navbar.navbar.activo {
 /* MEDIA QUERY */
 @media (max-width: 1024px) {
   .header {
-    padding: 2rem 3%;
+    padding: 2rem 4%;
   }
 
   section {
@@ -158,9 +138,11 @@ nav#navbar.navbar.activo {
     gap: 10px;
   }
 
-  div#darkMode-icon.bx.bx-moon::before {
+  button#darkMode-icon.bx.bx-moon::before {
     font-size: 2.6rem;
     color: var(--white-color);
+    background: transparent;
+    border: none;
   }
 
   .navbar ul {
@@ -178,7 +160,6 @@ nav#navbar.navbar.activo {
     pointer-events: none;
     overflow: hidden;
     transition: all 0.5s ease;
-
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -192,8 +173,8 @@ nav#navbar.navbar.activo {
 }
 
 @media (max-width: 450px) {
-  div#darkMode-icon.bx.bx-moon::before {
+  button#darkMode-icon.bx.bx-moon::before {
     font-size: 2.5rem;
-    margin-bottom: 9rem;
   }
+
 }

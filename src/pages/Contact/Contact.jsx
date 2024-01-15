@@ -3,6 +3,7 @@ import './Contact.css';
 const Contact = () => {
   return (
     <main translate="no">
+      <div className="container" id="container">
       <section className="contact" id="contact">
         <h2 className="heading">
           Contact <span>Me!</span>
@@ -25,6 +26,7 @@ const Contact = () => {
           <input type="submit" value="Send Message" className="btn"></input>
         </form>
       </section>
+      </div>
     </main>
   );
 };

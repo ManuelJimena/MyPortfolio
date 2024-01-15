@@ -8,7 +8,6 @@ const Projects = () => {
 
   return (
     <main translate="no">
-      <div className="container ready" id="container">
         <section className="portfolio" id="portfolio">
           <h2 className="heading">
             Latest <span>Project</span>
@@ -19,7 +18,6 @@ const Projects = () => {
             ))}
           </div>
         </section>
-      </div>
     </main>
   );
 };

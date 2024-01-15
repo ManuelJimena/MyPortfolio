@@ -1,7 +1,5 @@
 import './Home.css';
 
-import React from 'react';
-
 const Home = () => {
   const darkModeLocalStorageKey = 'darkMode';
   const currentMode = localStorage.getItem(darkModeLocalStorageKey);
@@ -13,7 +11,6 @@ const Home = () => {
 
   return (
     <main translate="no">
-      <div className="container ready" id="container">
         <section className="home" id="home">
           <div className="home-content">
             <h3>Hello, I am</h3>
@@ -73,7 +70,6 @@ const Home = () => {
             <img id="image-element" src={logoUrl} alt="Imagen de Manuel Jimena"></img>
           </div>
         </section>
-      </div>
     </main>
   );
 };

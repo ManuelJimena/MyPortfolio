@@ -3,7 +3,6 @@ import './Skills.css';
 const Skills = () => {
   return (
     <main translate="no">
-      <div className="container ready" id="container">
         <section className="skills" id="skills">
           <h2 className="heading">
             My <span>Skills</span>
@@ -164,7 +163,6 @@ const Skills = () => {
             </div>
           </div>
         </section>
-      </div>
     </main>
   );
 };

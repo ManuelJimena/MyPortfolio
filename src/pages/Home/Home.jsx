@@ -13,6 +13,7 @@ const Home = () => {
 
   return (
     <main translate="no">
+      <div className="container" id="container">
       <section className="home" id="home">
         <div className="home-content">
           <h3>Hello, I am</h3>
@@ -72,6 +73,7 @@ const Home = () => {
           <img id="image-element" src={logoUrl} alt="Imagen de Manuel Jimena"></img>
         </div>
       </section>
+      </div>
     </main>
   );
 };

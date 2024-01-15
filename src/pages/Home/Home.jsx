@@ -14,20 +14,20 @@ const Home = () => {
   return (
     <main translate="no">
       <div className="container" id="container">
-      <section className="home" id="home">
-        <div className="home-content">
-          <h3>Hello, I am</h3>
-          <div id="text-animate">
-            <h1>
-              Manuel{' '}
-              <span className="animate" style={{ '--i': 3 }}>
-                Jimena
-              </span>
-            </h1>
-          </div>
-          <p>
-            Currently, I am studying web development. I live in Madrid, Spain, and I love
-            learning and creating content.
+        <section className="home" id="home">
+          <div className="home-content">
+            <h3>Hello, I am</h3>
+            <div id="text-animate">
+              <h1>
+                Manuel{' '}
+                <span className="animate" style={{ '--i': 3 }}>
+                  Jimena
+                </span>
+              </h1>
+            </div>
+            <p>
+              Currently, I am studying web development. I live in Madrid, Spain, and I love learning and creating content.
+
           </p>
           <div className="social-media">
             <a

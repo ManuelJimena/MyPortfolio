@@ -75,3 +75,21 @@ li {
 .dark-mode .circles p {
   color: #0b061f;
 }
+
+.ready#container {
+  z-index: 1;
+}
+
+.ready#container,
+.ready#dark-mode {
+  clip-path: circle(0% at 0 0);
+  transition-delay: 1.5s;
+} 
+
+#container,
+#dark-mode {
+  clip-path: circle(150% at 0 0);
+  z-index: 1;
+  transition: 1.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-delay: 0s;
+} 

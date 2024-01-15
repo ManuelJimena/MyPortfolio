@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <main translate="no">
-      <div className="container" id="container">
+      <div className="container ready" id="container">
         <section className="home" id="home">
           <div className="home-content">
             <h3>Hello, I am</h3>

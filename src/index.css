@@ -28,7 +28,9 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 1s ease, color 1s ease;
+  transition:
+    background-color 1s ease,
+    color 1s ease;
 }
 
 li {

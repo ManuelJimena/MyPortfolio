@@ -56,7 +56,8 @@ const Header = () => {
         <h2 className="logo">Portfolio</h2>
       </Link>
       <button
-      className={`bx ${navbar ? 'bx-x' : 'bx-menu'}`} id="menu-icon" 
+        className={`bx ${navbar ? 'bx-x' : 'bx-menu'}`}
+        id="menu-icon"
         onClick={handleClick}
       ></button>
       <nav className={`navbar ${navbar ? 'activo' : ''}`} id="navbar">

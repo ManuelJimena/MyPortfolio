@@ -123,6 +123,7 @@ section {
   transform-origin: 384px;
   background: var(--bg-color);
   padding: 13px 0;
+  transition: color 1s ease, background-color 1s ease;
 }
 
 .home .profession-box .profession:nth-child(1) {

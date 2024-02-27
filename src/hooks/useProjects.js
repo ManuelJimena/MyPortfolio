@@ -1,6 +1,42 @@
 export const useProjects = () => {
   const projects = [
     {
+      title: 'XTD UI Library',
+      description: 'Styled Components Library',
+      image:
+        'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1709041990/Portfolio/XTDUILibrary_bzlo5r.webp',
+      tech: ['React', 'Vite', 'Styled Components'],
+      github: 'https://github.com/ManuelJimena/UI-XTD-Library',
+      link: 'https://ui-xtd-library.vercel.app/',
+    },
+    {
+      title: 'GameHub',
+      description: 'Memory game and tic-tac-toe',
+      image:
+        'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1709042818/Portfolio/GameHub_xsw2ar.webp',
+      tech: ['React', 'Vite', 'CSS3'],
+      github: 'https://github.com/ManuelJimena/HubGamesReactJS',
+      link: 'https://hub-games-react-js.vercel.app/',
+    },
+    {
+      title: 'Burguer Bliss: The gourmet burgers',
+      description: "Burguer Bliss joint's website",
+      image:
+        'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1709040901/Portfolio/BurguerBliss_mtsahh.webp',
+      tech: ['Vite', 'HTML5', 'CSS3', 'JavaScript'],
+      github: 'https://github.com/ManuelJimena/BurguerBliss',
+      link: 'https://burguer-bliss.vercel.app/',
+    },
+    {
+      title: 'Luxury Fade Studio',
+      description: 'Barbershop',
+      image:
+        'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1695759445/Portfolio/Peluquer%C3%ADa_yoizyi.webp',
+      tech: ['React', 'Vite', 'CSS3'],
+      github: 'https://github.com/ManuelJimena/',
+      link: 'https://luxury-fade-studio.vercel.app/',
+    },
+    {
       title: 'Pokédex',
       description: 'A Pokédex implemented in React leveraging an external API',
       image:
@@ -35,24 +71,6 @@ export const useProjects = () => {
       tech: ['Vite', 'HTML5', 'CSS3', 'JavaScript'],
       github: 'https://github.com/ManuelJimena/RockPaperScissors',
       link: 'https://rock-paper-scissors-eta-dun.vercel.app/',
-    },
-    {
-      title: 'Burguer Bliss: The gourmet burgers',
-      description: "Burguer Bliss joint's website",
-      image:
-        'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1691786527/Portfolio/Banner_hmifhs.webp',
-      tech: ['Vite', 'HTML5', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/ManuelJimena/',
-      link: 'https://burguer-bliss.vercel.app/',
-    },
-    {
-      title: 'Luxury Fade Studio',
-      description: 'Barbershop',
-      image:
-        'https://res.cloudinary.com/dhjmt9vvq/image/upload/v1695759445/Portfolio/Peluquer%C3%ADa_yoizyi.webp',
-      tech: ['React', 'Vite', 'CSS3'],
-      github: 'https://github.com/ManuelJimena/',
-      link: 'https://luxury-fade-studio.vercel.app/',
     },
   ];
 
